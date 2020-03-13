@@ -10,8 +10,8 @@ namespace NUnitTestMaximum
         public void Max_ReturnsExpectedValue()
         {
             TestMaximumInteger md = new TestMaximumInteger();
-            int actualMax = md.maximumInteger(10, 15, 14);
-            Assert.AreEqual(15, actualMax);
+            double actualMax = md.isDoubleArray(10.5, 15.2, 14.3);
+            Assert.AreEqual(15.2, actualMax);
         }
     }
 

@@ -1,35 +1,21 @@
 ﻿using System;
+using System.Linq;
 
 namespace TestMaximumProblem
 {
    public class  TestMaximumInteger
     {
-        public int maximumInteger(int firstValue, int secondValue, int thirdValue)
+        public double isDoubleArray(double number1, double number2, double number3)
         {
-
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-            {
-                return firstValue;
-            }
-            else if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-            {
-                return secondValue;
-            }
-            else if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
-            {
-                return thirdValue;
-            }
-            else
-            {
-                return 0;
-            }
+            double[] doubleNumber = { number1, number2, number3 };
+            //Finding The Maximum double In Array
+            double MaxValue = doubleNumber.Max();
+            return MaxValue;
         }
-
-        public static void Main(string[] args)
+        public static void Main(String[] args)
         {
+            TestMaximumInteger tm = new TestMaximumInteger();
 
-            Console.WriteLine("Welcome To Test Maximum Problem");
-            TestMaximumInteger testmaximuminteger = new TestMaximumInteger();
         }
     }
 }
