@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaximumProblem", "TestMaximumProblem\TestMaximumProblem.csproj", "{301D713B-A15C-4353-846F-FEDE4F1F46B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestMaximum", "NUnitTestMaximum\NUnitTestMaximum.csproj", "{91C5A179-8857-42EA-9B8F-44B42ACC7A87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{301D713B-A15C-4353-846F-FEDE4F1F46B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{301D713B-A15C-4353-846F-FEDE4F1F46B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{301D713B-A15C-4353-846F-FEDE4F1F46B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C5A179-8857-42EA-9B8F-44B42ACC7A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C5A179-8857-42EA-9B8F-44B42ACC7A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C5A179-8857-42EA-9B8F-44B42ACC7A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C5A179-8857-42EA-9B8F-44B42ACC7A87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
