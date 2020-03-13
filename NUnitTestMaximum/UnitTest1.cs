@@ -21,7 +21,14 @@ namespace NUnitTestMaximum
             double actualMaxDouble = md.isDoubleArray(10.5, 15.2, 14.3);
             Assert.AreEqual(15.2, actualMaxDouble);
         }
-       
+        [Test]
+        public void Max_String()
+        {
+            TestMaximumInteger md = new TestMaximumInteger();
+            int actualMaxString = md.isStringArray("faa", "baaa", "ca");
+            Assert.AreEqual(4, actualMaxString);
+        }
+
     }
 
     
