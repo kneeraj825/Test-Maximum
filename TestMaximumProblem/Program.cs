@@ -3,19 +3,37 @@ using System.Linq;
 
 namespace TestMaximumProblem
 {
-   public class  TestMaximumInteger
+    
+    public class Test
     {
-        public T maxValueArray<T>(T number1, T number2, T number3)
+        public static void Main(string[] args)
         {
-            T[] maxNumber = { number1, number2, number3 };
-            //Finding The Maximum double In Array
-            T MaxValue = maxNumber.Max();
-            return MaxValue;
+            Console.WriteLine("Welcome to Test Maximum Problem");
         }
-        public static void Main(String[] args)
+        public class TestMaximumValue<E>
         {
-            TestMaximumInteger tm = new TestMaximumInteger();
+            E variable1;
+            E variable2;
+            E variable3;
+            public TestMaximumValue(E variable1, E variable2, E variable3)
+            {
+                this.variable1 = variable1;
+                this.variable2 = variable2;
+                this.variable3 = variable3;
 
-        }
+            }
+            public E TestMaximum()
+            {
+                return maxValueArray(this.variable1, this.variable2, this.variable3);
+            }
+            public static T maxValueArray<T>(T number1, T number2, T number3)
+            {
+                T[] maxNumber = { number1, number2, number3 };
+                //Finding The Maximum value In Array
+                T MaxValue = maxNumber.Max();
+                Console.WriteLine(MaxValue);
+                return MaxValue;
+            }
+        } 
     }
 }

@@ -10,23 +10,22 @@ namespace NUnitTestMaximum
         [Test]
         public void Max_ReturnIntegerValue()
         {
-            TestMaximumInteger md = new TestMaximumInteger();
-            int actualMaxInteger = md.maxValueArray(10, 15, 14);
+            int actualMaxInteger = Test.TestMaximumValue<int>.maxValueArray(10, 15, 14);
             Assert.AreEqual(15, actualMaxInteger);
         }
         [Test]
         public void Max_Double()
         {
-            TestMaximumInteger md = new TestMaximumInteger();
-            double actualMaxDouble = md.maxValueArray(10.5, 15.2, 14.3);
-            Assert.AreEqual(15.2, actualMaxDouble);
+
+            double actualMaxInteger = Test.TestMaximumValue<double>.maxValueArray(10.2, 15.6, 14.6);
+            Assert.AreEqual(15.6, actualMaxInteger);
         }
         [Test]
         public void Max_String()
         {
-            TestMaximumInteger md = new TestMaximumInteger();
-            string actualMaxDouble = md.maxValueArray("the", "three", "four");
-            Assert.AreEqual("three", actualMaxDouble);
+
+            int actualMaxInteger = Test.TestMaximumValue<string>.maxValueArray("the".Length, "corona".Length, "virus".Length);
+            Assert.AreEqual(6, actualMaxInteger);
         }
 
     }
